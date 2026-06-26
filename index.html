@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PetFlow - Controle de Fila</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🐾 PetFlow - Kanban Operacional</h1>
+    </header>
+
+    <main>
+        <section class="recepcao" aria-labelledby="form-titulo">
+            <h2 id="form-titulo">Novo Atendimento</h2>
+            <form id="form-atendimento">
+                <label for="tutor">Nome do Tutor:</label>
+                <input type="text" id="tutor" required placeholder="Ex: Mariana">
+
+                <label for="pet">Nome do Pet:</label>
+                <input type="text" id="pet" required placeholder="Ex: Belinha">
+
+                <label for="servico">Serviço:</label>
+                <select id="servico" required>
+                    <option value="">Selecione o serviço...</option>
+                    <option value="Banho">Apenas Banho</option>
+                    <option value="Banho e Tosa">Banho e Tosa Completa</option>
+                </select>
+
+                <button type="submit">Adicionar à Fila</button>
+            </form>
+        </section>
+
+        <section class="kanban-board">
+            
+            <article class="kanban-coluna" id="coluna-espera">
+                <h3>Em Espera</h3>
+                <div class="cards-container">
+                    </div>
+            </article>
+
+            <article class="kanban-coluna" id="coluna-banho">
+                <h3>Em Atendimento</h3>
+                <div class="cards-container"></div>
+            </article>
+
+            <article class="kanban-coluna" id="coluna-concluido">
+                <h3>Concluído</h3>
+                <div class="cards-container"></div>
+            </article>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido para o Projeto Integrador - 2026</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
