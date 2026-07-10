@@ -93,7 +93,7 @@ button:hover {
 .kanban-coluna h3 {
     text-align: center;
     margin-bottom: 15px;
-    color: #2c3e50;
+    color: #374d61;
     border-bottom: 2px solid #ccc;
     padding-bottom: 5px;
 }
@@ -181,4 +181,10 @@ button:hover {
 
 .btn-avancar:hover {
     background: #2c3e50;
+}
+
+.icone-pata {
+    filter: brightness(0) invert(1);
+    display: inline-block;
+    margin-right: 5px;
 }
