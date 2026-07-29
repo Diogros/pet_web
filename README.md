@@ -43,17 +43,11 @@ O projeto foi desenvolvido sob padrões industriais limpos (sem frameworks de UI
 ---
 
 ## 📂 Estrutura de Diretórios do Repositório
-```text
-meu-projeto-UC15-TI/
-├── assets/
-│   ├── css/
-│   │   └── style.css            # Folha de estilos, UI do Kanban, Animações e Responsividade
-│   ├── js/
-│   │   └── script.js            # Lógica e temporizadores em IIFE (Compatível com WordPress)
-│   └── images/                  # Evidências de testes, prints e logotipos
+
+ pet_web/
 ├── doc/
-│   ├── Design.md                # Documento e Especificação de Identidade Visual
-│   └── DOCUMENTO_TECNICO.pdf    # Relatório Completo (DADS) com análise W3C e arquitetura
-├── page-petflow.php             # Template de Página Customizado para o tema WordPress
-├── index.html                   # Versão HTML estática inspecionada no validador
-└── README.md                    # Documentação do repositório (Este arquivo)# pet_web
+├── frontend/
+│   ├── index.html
+│   ├── script.js
+│   └── style.css
+└── README.md
